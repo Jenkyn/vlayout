@@ -22,9 +22,8 @@
   ~ SOFTWARE.
   -->
 
-<manifest
-    package="com.alibaba.android.vlayout.example"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alibaba.android.vlayout.example">
 
     <application
         android:allowBackup="true"
@@ -32,32 +31,30 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".RootActivity">
+        <activity
+            android:name=".RootActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.alibaba.android.vlayout.example.OnePlusNLayoutActivity">
-
-        </activity>
-
-        <activity android:name="com.alibaba.android.vlayout.example.MainActivity">
-
-        </activity>
-
-        <activity android:name="com.alibaba.android.vlayout.example.TestActivity">
-
-        </activity>
-
-        <activity android:name="com.alibaba.android.vlayout.example.VLayoutActivity">
-
-        </activity>
-
-        <activity android:name="com.alibaba.android.vlayout.example.DebugActivity">
-
-        </activity>
+        <activity
+            android:name="com.alibaba.android.vlayout.example.OnePlusNLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.alibaba.android.vlayout.example.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.alibaba.android.vlayout.example.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.alibaba.android.vlayout.example.VLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.alibaba.android.vlayout.example.DebugActivity"
+            android:exported="false" />
 
     </application>
 
